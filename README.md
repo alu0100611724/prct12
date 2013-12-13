@@ -57,6 +57,11 @@ Considere la Gema para la representación de Matrices que ha desarrollado en pr�
 3.-Utilizar métodos como 'map/collect', 'inject/reduce', 'upto' o 'times' para implementar la suma y el producto de matrices.
 4.-Generar la documentación de la Gema.
 
+## Ampliación práctica 12
+Considere la Gema para la representación de Matrices que ha desarrollado en prácticas anteriores. Los objetivos de esta práctica son dos:
+1.-Seguir las dependencias de la Gema (Gemnasium).
+2.-Diseñar e implementar un Lenguaje de Dominio Específico (Domain Specific Language - DSL).
+
 ## Autores
 
 Autores: Iván Cabaleiro Escudero y Maurizio A. Rendón.

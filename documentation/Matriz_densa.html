@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+<title>class Matriz_densa - RDoc Documentation</title>
+
+<link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="./js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/darkfish.js"></script>
+
+
+<body id="top" class="class">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="./index.html">Home</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  
+<div id="table-of-contents">
+  <nav class="section">
+    <h3 class="section-header">Table of Contents</h3>
+    <ul>
+      <li><a href="#label-matriz_densa.rb">matriz_densa.rb</a>
+      <li><a href="#label-Clase+Matriz_densa">Clase Matriz_densa</a>
+    </ul>
+  </nav>
+</div>
+
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>lib/prct09/matriz_densa.rb
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    <nav id="parent-class-section" class="section">
+  <h3 class="section-header">Parent</h3>
+  
+  <p class="link"><a href="Matriz.html">Matriz</a>
+  
+</nav>
+
+    
+    
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li class="calls-super" ><a href="#method-c-new">::new</a>
+    
+    <li ><a href="#method-i-max">#max</a>
+    
+    <li ><a href="#method-i-min">#min</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="./Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="./Gemfile_lock.html">Gemfile.lock</a>
+  
+    <li class="file"><a href="./Guardfile.html">Guardfile</a>
+  
+    <li class="file"><a href="./LICENSE_txt.html">LICENSE</a>
+  
+    <li class="file"><a href="./README_md.html">README</a>
+  
+    <li class="file"><a href="./Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="./documentation/created_rid.html">created.rid</a>
+  
+    <li class="file"><a href="./prct09_gemspec.html">prct09.gemspec</a>
+  
+    <li class="file"><a href="./pruebas_html.html">pruebas.html</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="./Matriz.html">Matriz</a>
+  
+    <li><a href="./Matriz_densa.html">Matriz_densa</a>
+  
+    <li><a href="./Matriz_dispersa.html">Matriz_dispersa</a>
+  
+    <li><a href="./Object.html">Object</a>
+  
+    <li><a href="./Prct09.html">Prct09</a>
+  
+    <li><a href="./Racional.html">Racional</a>
+  
+    <li><a href="./SparseVector.html">SparseVector</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="class">class Matriz_densa</h1>
+
+  <div id="description" class="description">
+    
+<h1 id="label-matriz_densa.rb">matriz_densa.rb<span><a href="#label-matriz_densa.rb">&para;</a> <a href="#documentation">&uarr;</a></span></h1>
+<dl class="rdoc-list note-list"><dt>Autor
+<dd>
+<p>Ivan Cabaleiro Escuderos.</p>
+</dd><dt>Autor
+<dd>
+<p>Maurizio A. Rendon Mattogno.</p>
+</dd><dt>Web
+<dd>
+<p><a
+href="https://github.com/alu0100611724/prct11.git">github.com/alu0100611724/prct11.git</a></p>
+</dd></dl>
+
+<h2 id="label-Clase+Matriz_densa">Clase <a href="Matriz_densa.html">Matriz_densa</a><span><a href="#label-Clase+Matriz_densa">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>Clase concreta de la clase <a href="Matriz.html">Matriz</a> para el uso de
+las matrices densas.</p>
+<ul><li>
+<p>max ()</p>
+</li><li>
+<p>min ()</p>
+</li></ul>
+
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+    <!-- Attributes -->
+    <section id="attribute-method-details" class="method-section section">
+      <h3 class="section-header">Attributes</h3>
+
+      
+      <div id="attribute-i-m" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">m</span><span
+            class="attribute-access-type">[RW]</span>
+        </div>
+
+        <div class="method-description">
+        
+        <p>Variable que contiene los valores de la matriz</p>
+        
+        </div>
+      </div>
+      
+    </section><!-- attribute-method-details -->
+    
+
+    <!-- Methods -->
+    
+     <section id="public-class-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Class Methods</h3>
+
+    
+      <div id="method-c-new" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">new</span><span
+            class="method-args">(matriz)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Recibe una matriz, la almacena en @m y llama a super con los valores de
+fila y columna</p>
+          
+          
+            <div class="method-calls-super">
+              Calls superclass method
+              <a href="Matriz.html#method-c-new">Matriz.new</a>
+            </div>
+          
+
+          
+          <div class="method-source-code" id="new-source">
+            <pre><span class="ruby-comment"># File lib/prct09/matriz_densa.rb, line 20</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">initialize</span> (<span class="ruby-identifier">matriz</span>)
+       <span class="ruby-identifier">raise</span> <span class="ruby-constant">ArgumentError</span>, <span class="ruby-string">&#39;El parametro debe ser una matriz&#39;</span> <span class="ruby-keyword">unless</span> <span class="ruby-identifier">matriz</span>.<span class="ruby-identifier">is_a?</span> <span class="ruby-constant">Array</span>
+       <span class="ruby-ivar">@m</span> = <span class="ruby-identifier">matriz</span>
+        <span class="ruby-keyword">super</span>(<span class="ruby-identifier">matriz</span>.<span class="ruby-identifier">length</span>, <span class="ruby-identifier">matriz</span>[<span class="ruby-value">0</span>].<span class="ruby-identifier">length</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- new-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- new-method -->
+
+    
+    </section><!-- public-class-method-details -->
+  
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Instance Methods</h3>
+
+    
+      <div id="method-i-max" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">max</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Busca el elemento mayor de la matriz densa</p>
+          
+          
+
+          
+          <div class="method-source-code" id="max-source">
+            <pre><span class="ruby-comment"># File lib/prct09/matriz_densa.rb, line 27</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">max</span>
+        <span class="ruby-identifier">max</span> = <span class="ruby-ivar">@m</span>[<span class="ruby-value">0</span>][<span class="ruby-value">0</span>]
+        <span class="ruby-keyword">for</span> <span class="ruby-identifier">i</span> <span class="ruby-keyword">in</span> <span class="ruby-value">0</span><span class="ruby-operator">...</span><span class="ruby-ivar">@fi</span> 
+                <span class="ruby-keyword">for</span> <span class="ruby-identifier">k</span> <span class="ruby-keyword">in</span> <span class="ruby-value">0</span><span class="ruby-operator">...</span><span class="ruby-ivar">@co</span>
+                        <span class="ruby-keyword">if</span> (<span class="ruby-ivar">@m</span>[<span class="ruby-identifier">i</span>][<span class="ruby-identifier">k</span>] <span class="ruby-operator">&gt;</span> <span class="ruby-identifier">max</span>) <span class="ruby-keyword">then</span>
+                                <span class="ruby-identifier">max</span>=<span class="ruby-ivar">@m</span>[<span class="ruby-identifier">i</span>][<span class="ruby-identifier">k</span>] 
+                        <span class="ruby-keyword">end</span>
+                <span class="ruby-keyword">end</span>
+        <span class="ruby-keyword">end</span>
+        <span class="ruby-identifier">max</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- max-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- max-method -->
+
+    
+      <div id="method-i-min" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">min</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Busca el menor elemento dentro de la matriz densa</p>
+          
+          
+
+          
+          <div class="method-source-code" id="min-source">
+            <pre><span class="ruby-comment"># File lib/prct09/matriz_densa.rb, line 40</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">min</span>
+        <span class="ruby-identifier">min</span> = <span class="ruby-ivar">@m</span>[<span class="ruby-value">0</span>][<span class="ruby-value">0</span>]
+        <span class="ruby-keyword">for</span> <span class="ruby-identifier">i</span> <span class="ruby-keyword">in</span> <span class="ruby-value">0</span><span class="ruby-operator">...</span><span class="ruby-identifier">fi</span>
+                <span class="ruby-keyword">for</span> <span class="ruby-identifier">k</span> <span class="ruby-keyword">in</span> <span class="ruby-value">0</span><span class="ruby-operator">...</span><span class="ruby-identifier">co</span>
+                        <span class="ruby-keyword">if</span> <span class="ruby-ivar">@m</span>[<span class="ruby-identifier">i</span>][<span class="ruby-identifier">k</span>] <span class="ruby-operator">&lt;</span> <span class="ruby-identifier">min</span> <span class="ruby-keyword">then</span>
+                                <span class="ruby-identifier">min</span>=<span class="ruby-ivar">@m</span>[<span class="ruby-identifier">i</span>][<span class="ruby-identifier">k</span>]
+                        <span class="ruby-keyword">end</span>
+                <span class="ruby-keyword">end</span>
+        <span class="ruby-keyword">end</span>     
+        <span class="ruby-identifier">min</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- min-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- min-method -->
+
+    
+    </section><!-- public-instance-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 4.0.0.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

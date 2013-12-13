@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+<title>README - RDoc Documentation</title>
+
+<link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="./js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/darkfish.js"></script>
+
+
+<body class="file">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="./index.html">Home</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  
+<div id="table-of-contents">
+  <nav class="section">
+    <h3 class="section-header">Table of Contents</h3>
+    <ul>
+      <li><a href="#label-Prct09">Prct09</a>
+      <li><a href="#label-Instalacion">Instalacion</a>
+      <li><a href="#label-Uso">Uso</a>
+      <li><a href="#label-Contribuir">Contribuir</a>
+      <li><a href="#label-Jerarqu%C3%ADa+de+clases">Jerarquía de clases</a>
+      <li><a href="#label-Ampliaci%C3%B3n+pr%C3%A1ctica+10">Ampliación práctica 10</a>
+      <li><a href="#label-Ampliaci%C3%B3n+pr%C3%A1ctica+11">Ampliación práctica 11</a>
+      <li><a href="#label-Autores">Autores</a>
+    </ul>
+  </nav>
+</div>
+
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="./Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="./Gemfile_lock.html">Gemfile.lock</a>
+  
+    <li class="file"><a href="./Guardfile.html">Guardfile</a>
+  
+    <li class="file"><a href="./LICENSE_txt.html">LICENSE</a>
+  
+    <li class="file"><a href="./README_md.html">README</a>
+  
+    <li class="file"><a href="./Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="./documentation/created_rid.html">created.rid</a>
+  
+    <li class="file"><a href="./prct09_gemspec.html">prct09.gemspec</a>
+  
+    <li class="file"><a href="./pruebas_html.html">pruebas.html</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="./Matriz.html">Matriz</a>
+  
+    <li><a href="./Matriz_densa.html">Matriz_densa</a>
+  
+    <li><a href="./Matriz_dispersa.html">Matriz_dispersa</a>
+  
+    <li><a href="./Object.html">Object</a>
+  
+    <li><a href="./Prct09.html">Prct09</a>
+  
+    <li><a href="./Racional.html">Racional</a>
+  
+    <li><a href="./SparseVector.html">SparseVector</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation" class="description">
+  
+<h1 id="label-Prct09"><a href="Prct09.html">Prct09</a><span><a href="#label-Prct09">&para;</a> <a href="#documentation">&uarr;</a></span></h1>
+
+<p>Esta gema permite gestionar matrices densas o dispersas de forma diferente
+para mejorar el uso de la memoria.</p>
+
+<h2 id="label-Instalacion">Instalacion<span><a href="#label-Instalacion">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>Add this line to your application&#39;s Gemfile:</p>
+
+<pre>gem &#39;prct09&#39;</pre>
+
+<p>And then execute:</p>
+
+<pre>$ bundle</pre>
+
+<p>Or install it yourself as:</p>
+
+<pre>$ gem install prct09</pre>
+
+<h2 id="label-Uso">Uso<span><a href="#label-Uso">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>Para utilizar esta librería, debes incluir el fichero prct09:</p>
+
+<pre class="ruby"><span class="ruby-identifier">require</span> <span class="ruby-string">&#39;prct09&#39;</span>
+</pre>
+
+<p>Para contribuir en con el desarrollo del código hay que instalar las
+dependencias de la librería. Esto se hace automáticamente ejecutando:</p>
+
+<pre>bundle</pre>
+
+<p>En caso de no tener bundle instalado o que la versión sea antigua, ejecuta:</p>
+
+<pre>gem install bundle</pre>
+
+<h2 id="label-Contribuir">Contribuir<span><a href="#label-Contribuir">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>1. Fork it
+2. Create your feature branch (<code>git checkout -b
+my-new-feature</code>)
+3. Commit your changes (<code>git commit -am
+&#39;Add some feature&#39;</code>)
+4. Push to the branch (<code>git push
+origin my-new-feature</code>)
+5. Create new Pull Request</p>
+
+<h2 id="label-Jerarqu%C3%ADa+de+clases">Jerarquía de clases<span><a href="#label-Jerarqu%C3%ADa+de+clases">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>Las clases MatrizDensa y MatrizDispersas serán subclases de la clase <a
+href="Matriz.html">Matriz</a>. Cada una implementará como corresponda los
+comportamientos heredados.</p>
+
+<h2 id="label-Ampliaci%C3%B3n+pr%C3%A1ctica+10">Ampliación práctica 10<span><a href="#label-Ampliaci%C3%B3n+pr%C3%A1ctica+10">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>Considere la Gema para Matrices que empezó a desarrollar en la práctica
+anterior. El objetivo de esta práctica es terminar su creación.
+1.-
+Desarrollar métodos para calcular el máximos y el mínimo de los elementos
+de una matriz.
+2.- Construir la gema
+gem build
+3.- Considerar su
+publicacion
+gem push</p>
+
+<h2 id="label-Ampliaci%C3%B3n+pr%C3%A1ctica+11">Ampliación práctica 11<span><a href="#label-Ampliaci%C3%B3n+pr%C3%A1ctica+11">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>Considere la Gema para la representación de Matrices que ha desarrollado en
+prácticas anteriores. Los objetivos de esta práctica son
+cuatro:
+1.-Documentar la gema (utlizando RDOC).
+2.-Desarrollar métodos con
+la filosofía de la programación funcional.
+3.-Utilizar métodos como
+&#39;map/collect&#39;, &#39;inject/reduce&#39;, &#39;upto&#39; o
+&#39;times&#39; para implementar la suma y el producto de
+matrices.
+4.-Generar la documentación de la Gema.</p>
+
+<h2 id="label-Autores">Autores<span><a href="#label-Autores">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>Autores: Iván Cabaleiro Escudero y Maurizio A. Rendón.</p>
+
+</div>
+
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 4.0.0.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

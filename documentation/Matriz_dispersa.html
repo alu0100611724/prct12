@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+<title>class Matriz_dispersa - RDoc Documentation</title>
+
+<link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="./js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/darkfish.js"></script>
+
+
+<body id="top" class="class">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="./index.html">Home</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>lib/prct09/matriz_dispersa.rb
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    <nav id="parent-class-section" class="section">
+  <h3 class="section-header">Parent</h3>
+  
+  <p class="link"><a href="Matriz.html">Matriz</a>
+  
+</nav>
+
+    
+    
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li class="calls-super" ><a href="#method-c-new">::new</a>
+    
+    <li ><a href="#method-i-2A">#*</a>
+    
+    <li ><a href="#method-i-2B">#+</a>
+    
+    <li ><a href="#method-i-2D">#-</a>
+    
+    <li ><a href="#method-i-5B-5D">#[]</a>
+    
+    <li ><a href="#method-i-max">#max</a>
+    
+    <li ><a href="#method-i-min">#min</a>
+    
+    <li ><a href="#method-i-to_den">#to_den</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="./Gemfile.html">Gemfile</a>
+  
+    <li class="file"><a href="./Gemfile_lock.html">Gemfile.lock</a>
+  
+    <li class="file"><a href="./Guardfile.html">Guardfile</a>
+  
+    <li class="file"><a href="./LICENSE_txt.html">LICENSE</a>
+  
+    <li class="file"><a href="./README_md.html">README</a>
+  
+    <li class="file"><a href="./Rakefile.html">Rakefile</a>
+  
+    <li class="file"><a href="./documentation/created_rid.html">created.rid</a>
+  
+    <li class="file"><a href="./prct09_gemspec.html">prct09.gemspec</a>
+  
+    <li class="file"><a href="./pruebas_html.html">pruebas.html</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="./Matriz.html">Matriz</a>
+  
+    <li><a href="./Matriz_densa.html">Matriz_densa</a>
+  
+    <li><a href="./Matriz_dispersa.html">Matriz_dispersa</a>
+  
+    <li><a href="./Object.html">Object</a>
+  
+    <li><a href="./Prct09.html">Prct09</a>
+  
+    <li><a href="./Racional.html">Racional</a>
+  
+    <li><a href="./SparseVector.html">SparseVector</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="class">class Matriz_dispersa</h1>
+
+  <div id="description" class="description">
+    
+<h2 id="label-Clase+Matriz_dispersa">Clase <a href="Matriz_dispersa.html">Matriz_dispersa</a><span><a href="#label-Clase+Matriz_dispersa">&para;</a> <a href="#documentation">&uarr;</a></span></h2>
+
+<p>Clase concreta de <a href="Matriz.html">Matriz</a> para el uso de las
+matrices dispersas (mas de un 60% de ceros).</p>
+<ul><li>
+<p>&#39;[]&#39; (i)</p>
+</li><li>
+<p>max ()</p>
+</li><li>
+<p>min ()</p>
+</li><li>
+<p><a href="Matriz_dispersa.html#method-i-to_den">#to_den</a> ()</p>
+</li><li>
+<p>Operadores +,-,*</p>
+</li></ul>
+
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+    <!-- Attributes -->
+    <section id="attribute-method-details" class="method-section section">
+      <h3 class="section-header">Attributes</h3>
+
+      
+      <div id="attribute-i-m" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">m</span><span
+            class="attribute-access-type">[RW]</span>
+        </div>
+
+        <div class="method-description">
+        
+        <p>Variable con los indices hash y sus valores asociados</p>
+        
+        </div>
+      </div>
+      
+    </section><!-- attribute-method-details -->
+    
+
+    <!-- Methods -->
+    
+     <section id="public-class-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Class Methods</h3>
+
+    
+      <div id="method-c-new" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">new</span><span
+            class="method-args">(h = {})</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Recibe un hash y lo almacena en nuestra estructura, llama a super con el
+valor maximo de fila y columna</p>
+          
+          
+            <div class="method-calls-super">
+              Calls superclass method
+              <a href="Matriz.html#method-c-new">Matriz.new</a>
+            </div>
+          
+
+          
+          <div class="method-source-code" id="new-source">
+            <pre><span class="ruby-comment"># File lib/prct09/matriz_dispersa.rb, line 57</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">h</span> = {})
+  <span class="ruby-identifier">fi</span>,<span class="ruby-identifier">co</span>= <span class="ruby-value">0</span>,<span class="ruby-value">0</span>
+  <span class="ruby-ivar">@m</span> = <span class="ruby-constant">Hash</span>.<span class="ruby-identifier">new</span>({})
+  <span class="ruby-keyword">for</span> <span class="ruby-identifier">k</span> <span class="ruby-keyword">in</span> <span class="ruby-identifier">h</span>.<span class="ruby-identifier">keys</span> <span class="ruby-keyword">do</span>
+    <span class="ruby-keyword">if</span> (<span class="ruby-identifier">k</span><span class="ruby-operator">&gt;</span><span class="ruby-identifier">fi</span>) <span class="ruby-keyword">then</span> <span class="ruby-identifier">fi</span>=<span class="ruby-identifier">k</span> <span class="ruby-keyword">end</span> 
+    <span class="ruby-ivar">@m</span>[<span class="ruby-identifier">k</span>] = <span class="ruby-keyword">if</span> <span class="ruby-identifier">h</span>[<span class="ruby-identifier">k</span>].<span class="ruby-identifier">is_a?</span> <span class="ruby-constant">SparseVector</span>
+                   <span class="ruby-identifier">h</span>[<span class="ruby-identifier">k</span>]
+                 <span class="ruby-keyword">else</span> 
+                   <span class="ruby-ivar">@m</span>[<span class="ruby-identifier">k</span>] = <span class="ruby-constant">SparseVector</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">h</span>[<span class="ruby-identifier">k</span>])
+                 <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">for</span> <span class="ruby-identifier">j</span> <span class="ruby-keyword">in</span> <span class="ruby-identifier">h</span>[<span class="ruby-identifier">k</span>].<span class="ruby-identifier">keys</span> <span class="ruby-keyword">do</span>
+      <span class="ruby-keyword">if</span> (<span class="ruby-identifier">j</span><span class="ruby-operator">&gt;</span><span class="ruby-identifier">co</span>) <span class="ruby-keyword">then</span> <span class="ruby-identifier">co</span>=<span class="ruby-identifier">j</span> <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">super</span>(<span class="ruby-identifier">fi</span><span class="ruby-operator">+</span><span class="ruby-value">1</span>, <span class="ruby-identifier">co</span><span class="ruby-operator">+</span><span class="ruby-value">1</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- new-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- new-method -->
+
+    
+    </section><!-- public-class-method-details -->
+  
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Instance Methods</h3>
+
+    
+      <div id="method-i-2A" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">*</span><span
+            class="method-args">(o)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Convierte la matriz en densa y llama al operador de la superclase</p>
+          
+          
+
+          
+          <div class="method-source-code" id="2A-source">
+            <pre><span class="ruby-comment"># File lib/prct09/matriz_dispersa.rb, line 153</span>
+<span class="ruby-keyword">def</span> <span class="ruby-operator">*</span>(<span class="ruby-identifier">o</span>)
+        <span class="ruby-identifier">a</span> = <span class="ruby-keyword">self</span>.<span class="ruby-identifier">to_den</span>
+        <span class="ruby-keyword">if</span> <span class="ruby-identifier">o</span>.<span class="ruby-identifier">class</span> <span class="ruby-operator">==</span> <span class="ruby-constant">Matriz_dispersa</span> <span class="ruby-keyword">then</span>
+                <span class="ruby-keyword">return</span> <span class="ruby-identifier">a</span> <span class="ruby-operator">*</span> <span class="ruby-identifier">o</span>.<span class="ruby-identifier">to_den</span>
+        <span class="ruby-keyword">else</span>
+                <span class="ruby-keyword">return</span> <span class="ruby-identifier">a</span> <span class="ruby-operator">*</span> <span class="ruby-identifier">o</span>
+        <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- 2A-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- 2A-method -->
+
+    
+      <div id="method-i-2B" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">+</span><span
+            class="method-args">(o)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Operador suma optimizado para matrices dispersas, si el argumento no es <a
+href="Matriz_dispersa.html">Matriz_dispersa</a> convierte la dispersa en
+densa y llama al operador de la superclase</p>
+          
+          
+
+          
+          <div class="method-source-code" id="2B-source">
+            <pre><span class="ruby-comment"># File lib/prct09/matriz_dispersa.rb, line 139</span>
+<span class="ruby-keyword">def</span> <span class="ruby-operator">+</span>(<span class="ruby-identifier">o</span>)
+  <span class="ruby-identifier">a</span> = <span class="ruby-keyword">self</span>.<span class="ruby-identifier">to_den</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">o</span>.<span class="ruby-identifier">class</span> <span class="ruby-operator">==</span> <span class="ruby-constant">Matriz_dispersa</span> <span class="ruby-keyword">then</span>
+    <span class="ruby-keyword">for</span> <span class="ruby-identifier">i</span> <span class="ruby-keyword">in</span> <span class="ruby-identifier">o</span>.<span class="ruby-identifier">m</span>.<span class="ruby-identifier">keys</span> <span class="ruby-keyword">do</span>
+        <span class="ruby-keyword">for</span> <span class="ruby-identifier">j</span> <span class="ruby-keyword">in</span> <span class="ruby-identifier">o</span>.<span class="ruby-identifier">m</span>[<span class="ruby-identifier">i</span>].<span class="ruby-identifier">keys</span> <span class="ruby-keyword">do</span>
+          <span class="ruby-identifier">a</span>[<span class="ruby-identifier">i</span>][<span class="ruby-identifier">j</span>] = <span class="ruby-identifier">a</span>[<span class="ruby-identifier">i</span>][<span class="ruby-identifier">j</span>] <span class="ruby-operator">+</span> <span class="ruby-identifier">o</span>[<span class="ruby-identifier">i</span>][<span class="ruby-identifier">j</span>]
+        <span class="ruby-keyword">end</span>
+      <span class="ruby-keyword">end</span>     
+    <span class="ruby-keyword">return</span> <span class="ruby-identifier">a</span>.<span class="ruby-identifier">m</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">a</span><span class="ruby-operator">+</span><span class="ruby-identifier">o</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- 2B-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- 2B-method -->
+
+    
+      <div id="method-i-2D" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">-</span><span
+            class="method-args">(o)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Operador resta optimizado para matrices dispersas, si el argumento no es <a
+href="Matriz_dispersa.html">Matriz_dispersa</a> convierte la dispersa en
+densa y llama al operador de la superclase</p>
+          
+          
+
+          
+          <div class="method-source-code" id="2D-source">
+            <pre><span class="ruby-comment"># File lib/prct09/matriz_dispersa.rb, line 125</span>
+ <span class="ruby-keyword">def</span> <span class="ruby-operator">-</span>(<span class="ruby-identifier">o</span>)
+        <span class="ruby-identifier">a</span> = <span class="ruby-keyword">self</span>.<span class="ruby-identifier">to_den</span>
+        <span class="ruby-keyword">if</span> <span class="ruby-identifier">o</span>.<span class="ruby-identifier">class</span> <span class="ruby-operator">==</span> <span class="ruby-constant">Matriz_dispersa</span> <span class="ruby-keyword">then</span>
+<span class="ruby-keyword">for</span> <span class="ruby-identifier">i</span> <span class="ruby-keyword">in</span> <span class="ruby-identifier">o</span>.<span class="ruby-identifier">m</span>.<span class="ruby-identifier">keys</span> <span class="ruby-keyword">do</span>
+        <span class="ruby-keyword">for</span> <span class="ruby-identifier">j</span> <span class="ruby-keyword">in</span> <span class="ruby-identifier">o</span>.<span class="ruby-identifier">m</span>[<span class="ruby-identifier">i</span>].<span class="ruby-identifier">keys</span> <span class="ruby-keyword">do</span>
+        <span class="ruby-identifier">a</span>[<span class="ruby-identifier">i</span>][<span class="ruby-identifier">j</span>] = <span class="ruby-identifier">a</span>[<span class="ruby-identifier">i</span>][<span class="ruby-identifier">j</span>] <span class="ruby-operator">-</span> <span class="ruby-identifier">o</span>[<span class="ruby-identifier">i</span>][<span class="ruby-identifier">j</span>]
+        <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span>
+<span class="ruby-keyword">return</span> <span class="ruby-identifier">a</span>.<span class="ruby-identifier">m</span>
+        <span class="ruby-keyword">else</span>
+                <span class="ruby-identifier">a</span><span class="ruby-operator">-</span><span class="ruby-identifier">o</span>
+        <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- 2D-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- 2D-method -->
+
+    
+      <div id="method-i-5B-5D" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">[]</span><span
+            class="method-args">(i)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Acceso al elemento i</p>
+          
+          
+
+          
+          <div class="method-source-code" id="5B-5D-source">
+            <pre><span class="ruby-comment"># File lib/prct09/matriz_dispersa.rb, line 75</span>
+<span class="ruby-keyword">def</span> <span class="ruby-operator">[]</span>(<span class="ruby-identifier">i</span>)
+  <span class="ruby-keyword">if</span> <span class="ruby-ivar">@m</span>[<span class="ruby-identifier">i</span>].<span class="ruby-identifier">class</span> <span class="ruby-operator">==</span> <span class="ruby-constant">SparseVector</span> <span class="ruby-keyword">then</span>
+      <span class="ruby-ivar">@m</span>[<span class="ruby-identifier">i</span>]
+  <span class="ruby-keyword">else</span>
+      <span class="ruby-value">0</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- 5B-5D-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- 5B-5D-method -->
+
+    
+      <div id="method-i-max" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">max</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Calcula el elemento maximo, optimizado para <a
+href="Matriz_dispersa.html">Matriz_dispersa</a></p>
+          
+          
+
+          
+          <div class="method-source-code" id="max-source">
+            <pre><span class="ruby-comment"># File lib/prct09/matriz_dispersa.rb, line 84</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">max</span>
+  <span class="ruby-identifier">max</span> = <span class="ruby-ivar">@m</span>[<span class="ruby-value">0</span>][<span class="ruby-value">0</span>]
+  <span class="ruby-keyword">for</span> <span class="ruby-identifier">i</span> <span class="ruby-keyword">in</span> <span class="ruby-ivar">@m</span>.<span class="ruby-identifier">keys</span> <span class="ruby-keyword">do</span>
+      <span class="ruby-keyword">for</span> <span class="ruby-identifier">j</span> <span class="ruby-keyword">in</span> <span class="ruby-ivar">@m</span>[<span class="ruby-identifier">i</span>].<span class="ruby-identifier">keys</span> <span class="ruby-keyword">do</span>
+          <span class="ruby-keyword">if</span> (<span class="ruby-ivar">@m</span>[<span class="ruby-identifier">i</span>][<span class="ruby-identifier">j</span>] <span class="ruby-operator">&gt;</span> <span class="ruby-identifier">max</span>) <span class="ruby-keyword">then</span>
+              <span class="ruby-identifier">max</span> = <span class="ruby-ivar">@m</span>[<span class="ruby-identifier">i</span>][<span class="ruby-identifier">j</span>] 
+          <span class="ruby-keyword">end</span>
+      <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">max</span>
+ <span class="ruby-keyword">end</span></pre>
+          </div><!-- max-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- max-method -->
+
+    
+      <div id="method-i-min" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">min</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Calcula el menor elemento, optimizado para <a
+href="Matriz_dispersa.html">Matriz_dispersa</a></p>
+          
+          
+
+          
+          <div class="method-source-code" id="min-source">
+            <pre><span class="ruby-comment"># File lib/prct09/matriz_dispersa.rb, line 97</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">min</span>
+ <span class="ruby-identifier">min</span> = <span class="ruby-ivar">@m</span>[<span class="ruby-value">0</span>][<span class="ruby-value">0</span>]
+ <span class="ruby-keyword">for</span> <span class="ruby-identifier">i</span> <span class="ruby-keyword">in</span> <span class="ruby-ivar">@m</span>.<span class="ruby-identifier">keys</span> <span class="ruby-keyword">do</span>
+     <span class="ruby-keyword">for</span> <span class="ruby-identifier">j</span> <span class="ruby-keyword">in</span> <span class="ruby-ivar">@m</span>[<span class="ruby-identifier">i</span>].<span class="ruby-identifier">keys</span> <span class="ruby-keyword">do</span>
+         <span class="ruby-keyword">if</span> (<span class="ruby-ivar">@m</span>[<span class="ruby-identifier">i</span>][<span class="ruby-identifier">j</span>] <span class="ruby-operator">&lt;</span> <span class="ruby-identifier">min</span>) <span class="ruby-keyword">then</span>
+             <span class="ruby-identifier">min</span> = <span class="ruby-ivar">@m</span>[<span class="ruby-identifier">i</span>][<span class="ruby-identifier">j</span>]       
+         <span class="ruby-keyword">end</span>
+     <span class="ruby-keyword">end</span>
+ <span class="ruby-keyword">end</span>
+ <span class="ruby-identifier">min</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- min-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- min-method -->
+
+    
+      <div id="method-i-to_den" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">to_den</span><span
+            class="method-args">()</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Convierte una matriz dispersa a densa.</p>
+          
+          
+
+          
+          <div class="method-source-code" id="to_den-source">
+            <pre><span class="ruby-comment"># File lib/prct09/matriz_dispersa.rb, line 113</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">to_den</span>
+               <span class="ruby-identifier">a</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>(<span class="ruby-ivar">@fi</span>)
+               <span class="ruby-keyword">for</span> <span class="ruby-identifier">i</span> <span class="ruby-keyword">in</span> <span class="ruby-value">0</span><span class="ruby-operator">...</span><span class="ruby-ivar">@fi</span>
+                       <span class="ruby-identifier">b</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>(<span class="ruby-ivar">@co</span>)
+                       <span class="ruby-keyword">for</span> <span class="ruby-identifier">j</span> <span class="ruby-keyword">in</span> <span class="ruby-value">0</span><span class="ruby-operator">...</span><span class="ruby-ivar">@co</span>
+                               <span class="ruby-identifier">b</span>[<span class="ruby-identifier">j</span>]       = <span class="ruby-ivar">@m</span>[<span class="ruby-identifier">i</span>][<span class="ruby-identifier">j</span>]
+                       <span class="ruby-keyword">end</span>
+                       <span class="ruby-identifier">a</span>[<span class="ruby-identifier">i</span>] = <span class="ruby-identifier">b</span>
+               <span class="ruby-keyword">end</span>
+               <span class="ruby-keyword">return</span> <span class="ruby-constant">Matriz_densa</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">a</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- to_den-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- to_den-method -->
+
+    
+    </section><!-- public-instance-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 4.0.0.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

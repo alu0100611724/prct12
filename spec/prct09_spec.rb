@@ -1,8 +1,4 @@
-require 'rspec'
-require 'prct09/racional.rb'
-require 'prct09/matriz.rb'
-require 'prct09/matriz_dispersa.rb'
-require 'prct09/matriz_densa.rb'
+require 'spec_helper'
 
 describe Matriz do
 	before :each do
@@ -75,5 +71,35 @@ describe Matriz do
 		(@mdis+@mdis).should == [[2, 0, 0], [0, 4, 0], [0, 0, 6]]
 	end
 
+	describe "DSL" do
+        before :all do
+                @pruebaSuma = Operaciones.new() do
+                        operacion "suma",
+                        densa(2,2) =>[[1,2],[3,4]],
+                        dispersa(2, 2) => {0 => {0 => 1, 1 => 2}, 1 => {0 => 3, 1 => 4}}
+                end
+                @pruebaResta= Operaciones.new() do
+                        operacion "resta",
+                        densa(2,2) =>[[1,2],[3,4]],
+                        dispersa(2, 2) => {0 => {0 => 1, 1 => 2}, 1 => {0 => 3, 1 => 4}}
+                end
 
+                @pruebaMultiplicacion= Operaciones.new() do
+                        operacion "multiplicacion",
+                        densa(2,2) =>[[1,2],[3,4]],
+                        dispersa(2,2) => {0 => {0 => 1, 1 => 2}, 1 => {0 => 3, 1 => 4}}
+                end
+
+
+        end
+        it "Suma" do
+                @pruebaSuma.to_s.should eq("suma\n[[2, 4], [6, 8]]\n")
+        end
+        it "Resta" do
+                @pruebaResta.to_s.should eq("resta\n[[0, 0], [0, 0]]\n")
+        end
+        it "Multiplicacion" do
+                @pruebaMultiplicacion.to_s.should eq("multiplicacion\n[[22, 32], [22, 32]]\n")
+        end
+   end
 end
